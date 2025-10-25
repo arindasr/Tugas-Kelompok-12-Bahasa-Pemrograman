@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item - Nekoblox</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Nekoblox Logo">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Item</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="check-order.html">Check Order</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Cari produk...">
+                <i class="bx bx-search"></i>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="bx bx-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="products" class="products spaced-top">
+        <div class="container">
+            <div class="products-banner">
+                <img src="images/yobux.png" alt="Pilih Tipe Robux yang Ingin Kamu Beli">
+            </div>
+            <div class="products-options">
+                <div class="option-card">
+                    <h3>Robux Gamepass</h3>
+                    <p>Pesan Robux dengan harga termurah! Estimasi pengiriman 5 hari. Pas buat kamu yang cari harga paling hemat!</p>
+                    <button class="btn-option" onclick="openRobuxModal('Robux Gamepass')">Beli Sekarang</button>
+                </div>
+                <div class="option-card">
+                    <h3>Robux Via Login</h3>
+                    <p>Beli Robux makin mudah! Cukup pakai username dan password, proses cepat dan praktis tanpa ribet, tanpa lama!</p>
+                    <button class="btn-option" onclick="openRobuxModal('Robux Via Login')">Beli Sekarang</button>
+                </div>
+                <div class="option-card coming-soon">
+                    <h3>Robux Gift</h3>
+                    <p>Beli Robux dalam bentuk gift untuk diberikan ke teman atau keluarga. Cara termudah untuk berbagi kebahagiaan!</p>
+                    <a href="#" class="btn-option">Coming Soon</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gamepass-section">
+        <div class="container">
+            <h2>Gamepass</h2>
+            <div class="game-tabs">
+                <button class="tab-button active" data-tab="expedition">Expedition Antarctica</button>
+                <button class="tab-button" data-tab="fish">Fish It</button>
+                <button class="tab-button" data-tab="garden">Grow a Garden</button>
+            </div>
+            <div id="expedition" class="tab-content active">
+                <div class="products-grid gamepass-grid">
+                    <div class="product-item" onclick="openOrderModal(this)">
+                        <img src="images/vip.jpeg" alt="VIP" class="gamepass-img">
+                        <h3>VIP</h3>
+                        <p>Rp. 6.550</p>
+                    </div>
+                    <div class="product-item" onclick="openOrderModal(this)">
+                        <img src="images/guide.jpeg" alt="Guide" class="gamepass-img">
+                        <h3>Guide</h3>
+                        <p>Rp. 1.750</p>
+                    </div>
+                    <div class="product-item" onclick="openOrderModal(this)">
+                        <img src="images/sr.jpeg" alt="Search and Rescue" class="gamepass-img">
+                        <h3>Search and Rescue</h3>
+                        <p>Rp. 4.950</p>
+                    </div>
+                    <div class="product-item" onclick="openOrderModal(this)">
+                        <img src="images/pro.jpeg" alt="Pro Pack" class="gamepass-img">
+                        <h3>Pro Pack</h3>
+                        <p>Rp. 6.550</p>
+                    </div>
+                    <div class="product-item" onclick="openOrderModal(this)">
+                        <img src="images/luxury.jpeg" alt="Luxury" class="gamepass-img">
+                        <h3>Luxury</h3>
+                        <p>Rp. 3.100</p>
+                    </div>
+                    <div class="product-item" onclick="openOrderModal(this)">
+                        <img src="images/hb.jpeg" alt="Health Bottle" class="gamepass-img">
+                        <h3>Health Bottle</h3>
+                        <p>Rp. 11.250</p>
+                    </div>
+                    <div class="product-item" onclick="openOrderModal(this)">
+                        <img src="images/music.jpeg" alt="Music Backpack" class="gamepass-img">
+                        <h3>Music Backpack</h3>
+                        <p>Rp. 3.500</p>
+                    </div>
+                    <div class="product-item" onclick="openOrderModal(this)">
+                        <img src="images/stamina.jpeg" alt="Extra Stamina" class="gamepass-img">
+                        <h3>Extra Stamina</h3>
+                        <p>Rp. 9.000</p>
+                    </div>
+                    <div class="product-item" onclick="openOrderModal(this)">
+                        <img src="images/storm.jpeg" alt="Storm Goggles" class="gamepass-img">
+                        <h3>Storm Goggles</h3>
+                        <p>Rp. 9.000</p>
+                    </div>
+                    <div class="product-item" onclick="openOrderModal(this)">
+                        <img src="images/flags.jpeg" alt="Flag" class="gamepass-img">
+                        <h3>Flag</h3>
+                        <p>Rp. 3.600</p>
+                    </div>
+                    <div class="product-item" onclick="openOrderModal(this)">
+                        <img src="images/flash.jpeg" alt="Flashlight" class="gamepass-img">
+                        <h3>Flashlight</h3>
+                        <p>Rp. 6.300</p>
+                    </div>
+                    <div class="product-item" onclick="openOrderModal(this)">
+                        <img src="images/backpack.jpeg" alt="Backpacks Colors" class="gamepass-img">
+                        <h3>Backpacks Colors</h3>
+                        <p>Rp. 4.500</p>
+                    </div>
+                </div>
+            </div>
+            <div id="fish" class="tab-content">
+                <div class="coming-soon-placeholder">
+                    <p>Item Fish It akan segera tersedia!</p>
+                </div>
+            </div>
+            <div id="garden" class="tab-content">
+                <div class="coming-soon-placeholder">
+                    <p>Item Grow a Garden akan segera tersedia!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="help" class="help">
+        <div class="container">
+            <div class="help-wrapper">
+                <div class="help-content">
+                    <div class="help-image">
+                        <img src="images/help.png" alt="Help Character">
+                    </div>
+                    <div class="help-text">
+                        <h2>Mengalami kesulitan saat membeli Robux?</h2>
+                        <p>Bergabunglah dengan komunitas kami di Discord atau kirim pesan langsung di Telegram untuk bantuan. Temukan Panduan Lengkap di tombol ini.</p>
+                        <div class="social-links">
+                            <a href="https://discord.gg/U2eYP4tS" class="social-icon"><i class="bx bxl-discord"></i></a>
+                            <a href="https://t.me/nekoblox" class="social-icon"><i class="bx bxl-telegram"></i></a>
+                            <a href="https://www.instagram.com/filkom_24?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon"><i class="bx bxl-instagram"></i></a>
+                        </div>
+                        <button id="btn-help" class="btn-help">Panduan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="panduan-modal" class="panduan-modal">
+        <div class="panduan-content">
+            <div class="panduan-header">
+                <h3>🐾 Panduan Beli Robux ala Neko! 🐾</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="panduan-steps">
+                <div class="step-item">
+                    <div class="step-icon">1️⃣</div>
+                    <p>Pilih item Robux atau Gamepass yang kamu suka di halaman Item!</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">2️⃣</div>
+                    <p>Tambahkan ke Cart, pilih payment method (QRIS paling lucu!), dan bayar ya!</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">3️⃣</div>
+                    <p>Robux masuk otomatis! Kalau bingung, chat Neko di Telegram. 😻</p>
+                </div>
+            </div>
+            <div class="panduan-footer">
+                <p>Selamat berpetualang di Roblox! 🎮✨</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="order-modal" class="order-modal">
+        <div class="order-content">
+            <span class="close-modal">&times;</span>
+            <h3 id="product-name">Produk</h3>
+            <p id="product-price" class="price">Rp 0</p>
+            <form id="order-form">
+                <div class="input-group">
+                    <input type="text" id="roblox-username" placeholder="Username Roblox" required>
+                </div>
+                <div class="input-group">
+                    <input type="tel" id="wa-number" placeholder="Nomor WA (opsional)">
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email-notif" placeholder="Email Untuk Notifikasi Pesanan (opsional)">
+                </div>
+                <p class="note">Produk gift gamepass hanya dapat diproses jam 10 pagi sampai jam 10 malam, di luar jam tersebut akan diproses pada jam operasional. Proses pengiriman memakan waktu 5-12 jam</p>
+                <div class="total-row">
+                    <span>Total</span>
+                    <span id="total-amount">Rp 0</span>
+                </div>
+                <button type="button" id="add-to-cart-btn" class="btn-add-cart">Tambah ke Keranjang</button>
+                <button type="submit" id="buy-now-btn" class="btn-buy-now">Beli Sekarang</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="robux-modal" class="order-modal">
+        <div class="order-content">
+            <span class="close-modal">&times;</span>
+            <h3 id="robux-type">Tipe Robux</h3>
+            <form id="robux-form">
+                <div class="input-group">
+                    <input type="text" id="robux-username" placeholder="Username Roblox" required>
+                </div>
+                <div class="input-group">
+                    <input type="number" id="robux-amount" placeholder="Jumlah Robux yang dipesan" min="1" required>
+                </div>
+                <div class="input-group">
+                    <input type="tel" id="robux-wa" placeholder="Nomor WA (opsional)">
+                </div>
+                <div class="input-group">
+                    <input type="email" id="robux-email" placeholder="Email Untuk Notifikasi Pesanan (opsional)">
+                </div>
+                <div class="input-group">
+                    <label for="robux-payment">Payment Method:</label>
+                    <select id="robux-payment" required>
+                        <option value="">Pilih Metode Pembayaran</option>
+                        <option value="qris">QRIS</option>
+                        <option value="bank">Bank Transfer (BCA)</option>
+                        <option value="dana">DANA</option>
+                        <option value="ovo">OVO</option>
+                        <option value="gopay">GoPay</option>
+                    </select>
+                </div>
+                <div class="total-row">
+                    <span>Total Transaksi</span>
+                    <span id="robux-total">Rp 0</span>
+                </div>
+                <button type="submit" class="btn-buy-now" style="width: 100%; margin-top: 10px;">Beli Sekarang</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="images/logo2.png" alt="Nekoblox Logo" class="footer-logo">
+                    <p>Platform terpercaya untuk beli item Roblox dengan cara yang aman, praktis, dan nyaman.</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Hubungi Kami</h4>
+                    <div class="social-item">
+                        <a href="https://instagram.com/nekoblox" class="social-link">
+                            <i class="bx bxl-instagram"></i>
+                            <span>@nekoblox</span>
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://t.me/nekoblox" class="social-link">
+                            <i class="bx bxl-telegram"></i>
+                            <span>@Nekoblox</span>
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="mailto:hello@nekoblox.com" class="social-link">
+                            <i class="bx bx-envelope"></i>
+                            <span>hello@nekoblox.com</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-about">
+                    <h4>ANGGOTA KELOMPOK</h4>
+                    <ul class="group-members">
+                        <li>Ali Imannudin - I.2410036</li>
+                        <li>Arinda Setyo Rini - I.2410187</li>
+                        <li>Dimas Rizky Aliandy - I.2310326</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://t.me/nekoblox" class="floating-cs-button" target="_blank">
+        <i class="bx bxl-telegram"></i>
+        <span>Chat CS</span>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

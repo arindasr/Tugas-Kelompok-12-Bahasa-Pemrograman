@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Order - Nekoblox</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Nekoblox Logo">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Item</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="check-order.html">Check Order</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Cari produk...">
+                <i class="bx bx-search"></i>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="bx bx-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="check-order" class="check-order spaced-top">
+        <div class="container">
+            <div class="check-form-container">
+                <h2>Check Status Pesanan</h2>
+                <p>Check status telus pesanan pembelian lewat discord dan telegram tidak dapat dicek di website</p>
+                <form id="check-form">
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="check-type" value="username" checked>
+                            <span>Via Username</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="check-type" value="invoice">
+                            <span>Via Invoice ID</span>
+                        </label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="check-input" placeholder="Masukkan username Roblox" required>
+                    </div>
+                    <button type="submit" class="btn-check">Cek Pesanan</button>
+                </form>
+                <div id="check-result" class="check-result" style="display: none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="images/logo2.png" alt="Nekoblox Logo" class="footer-logo">
+                    <p>Platform terpercaya untuk beli item Roblox dengan cara yang aman, praktis, dan nyaman.</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Hubungi Kami</h4>
+                    <div class="social-item">
+                        <a href="https://www.instagram.com/filkom_24?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link">
+                            <i class="bx bxl-instagram"></i>
+                            <span>@nekoblox</span>
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://t.me/nekoblox" class="social-link">
+                            <i class="bx bxl-telegram"></i>
+                            <span>@Nekoblox</span>
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="mailto:hello@nekoblox.com" class="social-link">
+                            <i class="bx bx-envelope"></i>
+                            <span>hello@nekoblox.com</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-about">
+                    <h4>ANGGOTA KELOMPOK</h4>
+                    <ul class="group-members">
+                        <li>Ali Imannudin - I.2410036</li>
+                        <li>Arinda Setyo Rini - I.2410187</li>
+                        <li>Dimas Rizky Aliandy - I.2310326</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://t.me/nekoblox" class="floating-cs-button" target="_blank">
+        <i class="bx bxl-telegram"></i>
+        <span>Chat CS</span>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

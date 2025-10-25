@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nekoblox - Sahabat Robloxmu!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Nekoblox Logo">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Item</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="check-order.html">Check Order</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Cari produk...">
+                <i class="bx bx-search"></i>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="bx bx-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-wrapper">
+            <div class="hero-inner">
+                <div class="hero-img">
+                    <img src="images/nekooo.png" alt="Banner Nekoblox">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-section">
+        <div class="container">
+            <h2>Pilih Layanan yang Kamu Butuhkan</h2>
+            <p>Berbagai layanan terkait kebutuhan Robloxmu.</p>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/robux.png" alt="Robux Icon">
+                    </div>
+                    <h3>Beli Robux</h3>
+                    <a href="products.html" class="btn-service">Beli Sekarang</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/gift.png" alt="Gift Gamepass Icon">
+                    </div>
+                    <h3>Beli Gift Gamepass</h3>
+                    <a href="products.html" class="btn-service">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="statistics" class="statistics">
+        <div class="container">
+            <h2>Statistik Nekoblox</h2>
+            <p class="subtitle">Lihat seberapa banyak Robux yang telah kami jual dan jumlah order yang telah kami layani.</p>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <img src="images/robux2.png" alt="Robux Icon" class="stat-icon">
+                    <h3>-</h3>
+                    <p>Robux Terjual</p>
+                </div>
+                <div class="stat-item">
+                    <img src="images/ceklis.png" alt="Robux Icon" class="stat-icon">
+                    <h3>-</h3>
+                    <p>Total Order</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="best-seller" class="best-seller">
+        <div class="container">
+            <div class="best-seller-header">
+                <div>
+                    <h2>Best Seller</h2>
+                    <p>Produk favorit Sobat Neko.</p>
+                </div>
+                <a href="products.html" class="btn-see-more">Lihat Selengkapnya</a>
+            </div>
+            <div class="products-grid">
+                <div class="product-item" onclick="openOrderModal(this)">
+                    <img src="images/sr.jpeg" alt="Search and Rescue">
+                    <h3>Search and Rescue</h3>
+                    <p>Rp50.000</p>
+                </div>
+                <div class="product-item" onclick="openOrderModal(this)">
+                    <img src="images/hb.jpeg" alt="Health Bottle">
+                    <h3>Health Bottle</h3>
+                    <p>Rp11.000</p>
+                </div>
+                <div class="product-item" onclick="openOrderModal(this)">
+                    <img src="images/stamina.jpeg" alt="Extra Stamina">
+                    <h3>Extra Stamina</h3>
+                    <p>Rp20.000</p>
+                </div>
+                <div class="product-item" onclick="openOrderModal(this)">
+                    <img src="images/flash.jpeg" alt="Flashlight">
+                    <h3>Flashlight</h3>
+                    <p>Rp6.000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Frequently Asked Question (FAQ)</h2>
+            <p>Kumpulan pertanyaan paling sering ditanyakan oleh sobat Neko.</p>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <div class="faq-question">Berapa lama waktu pengiriman Robux?</div>
+                    <div class="faq-answer">
+                        Pengiriman Robux dibagi menjadi dua jenis:<br>
+                        1. Robux melalui link (Gamepass): Cara ini membutuhkan waktu sekitar 5 hari hingga Robux masuk ke akun kamu. Jadi, harap sabar menunggu, ya!<br>
+                        2. Robux melalui login (menggunakan username dan password): Kalau pilih cara ini, Robux akan masuk ke akun kamu dalam waktu sekitar 3-5 jam. Prosesnya lebih cepat, tapi kamu perlu memberikan informasi login.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Apa yang harus dilakukan jika Robux belum masuk?</div>
+                    <div class="faq-answer">
+                        Silakan hubungi layanan pelanggan kami dengan menyertakan bukti pembayaran untuk pengecekan lebih lanjut.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Bagaimana cara beli Gift Gamepass?</div>
+                    <div class="faq-answer">
+                        Anda dapat membeli Gift Gamepass melalui halaman produk dan pilih opsi gift, lalu ikuti langkah-langkah yang tersedia.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Saya tidak bisa membeli Gamepass untuk pembelian Robux 5 Hari</div>
+                    <div class="faq-answer">
+                        Pastikan saldo Anda cukup atau coba hubungi layanan pelanggan kami untuk bantuan lebih lanjut.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Apakah Nekoblox aman atau tidak?</div>
+                    <div class="faq-answer">
+                        Ya, Nekoblox menggunakan sistem keamanan terjamin untuk semua transaksi.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="order-modal" class="order-modal">
+        <div class="order-content">
+            <span class="close-modal">&times;</span>
+            <h3 id="product-name">Produk</h3>
+            <p id="product-price" class="price">Rp 0</p>
+            <form id="order-form">
+                <div class="input-group">
+                    <input type="text" id="roblox-username" placeholder="Username Roblox" required>
+                </div>
+                <div class="input-group">
+                    <input type="tel" id="wa-number" placeholder="Nomor WA (opsional)">
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email-notif" placeholder="Email Untuk Notifikasi Pesanan (opsional)">
+                </div>
+                <p class="note">Produk gift gamepass hanya dapat diproses jam 10 pagi sampai jam 10 malam, di luar jam tersebut akan diproses pada jam operasional. Proses pengiriman memakan waktu 5-12 jam</p>
+                <div class="total-row">
+                    <span>Total</span>
+                    <span id="total-amount">Rp 0</span>
+                </div>
+                <button type="button" id="add-to-cart-btn" class="btn-add-cart">Tambah ke Keranjang</button>
+                <button type="submit" id="buy-now-btn" class="btn-buy-now">Beli Sekarang</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="images/logo2.png" alt="Nekoblox Logo" class="footer-logo">
+                    <p>Platform terpercaya untuk beli item Roblox dengan cara yang aman, praktis, dan nyaman.</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Hubungi Kami</h4>
+                    <div class="social-item">
+                        <a href="https://www.instagram.com/filkom_24?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link">
+                            <i class="bx bxl-instagram"></i>
+                            <span>@nekoblox</span>
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://t.me/nekoblox" class="social-link">
+                            <i class="bx bxl-telegram"></i>
+                            <span>@Nekoblox</span>
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="mailto:hello@nekoblox.com" class="social-link">
+                            <i class="bx bx-envelope"></i>
+                            <span>hello@nekoblox.com</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-about">
+                    <h4>ANGGOTA KELOMPOK</h4>
+                    <ul class="group-members">
+                        <li>Ali Imannudin - I.2410036</li>
+                        <li>Arinda Setyo Rini - I.2410187</li>
+                        <li>Dimas Rizky Aliandy - I.2310326</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://t.me/nekoblox" class="floating-cs-button" target="_blank">
+        <i class="bx bxl-telegram"></i>
+        <span>Chat CS</span>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

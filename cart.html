@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Nekoblox</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Nekoblox Logo">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Item</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="check-order.html">Check Order</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Cari produk...">
+                <i class="bx bx-search"></i>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="bx bx-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="cart" class="cart spaced-top">
+        <div class="container">
+            <div class="cart-sections">
+                <div class="cart-section">
+                    <h2>Keranjang</h2>
+                    <div id="cart-items">
+                        <p>Belum ada item di Keranjang</p>
+                    </div>
+                    <button id="clear-cart" class="btn-clear" style="display: none;">Kosongkan Keranjang</button>
+                </div>
+
+                <div class="cart-section payment-method">
+                    <h2>Payment Method</h2>
+                    <div class="payment-options">
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="qris" checked>
+                            <div class="option-content">
+                                <span>QRIS</span>
+                            </div>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="bank">
+                            <div class="option-content">
+                                <span>Bank Transfer (BCA)</span>
+                            </div>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="dana">
+                            <div class="option-content">
+                                <span>DANA</span>
+                            </div>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="ovo">
+                            <div class="option-content">
+                                <span>OVO</span>
+                            </div>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="gopay">
+                            <div class="option-content">
+                                <span>GoPay</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="cart-section order-detail">
+                    <h2>Detail Order</h2>
+                    <div class="order-row">
+                        <span>Total Harga</span>
+                        <span id="total-price">Rp 0</span>
+                    </div>
+                    <div class="order-row">
+                        <span>Total Biaya Admin</span>
+                        <span id="admin-fee">Rp 0</span>
+                    </div>
+                    <hr>
+                    <div class="order-row total-final">
+                        <span>Total Akhir</span>
+                        <span id="total-final">Rp 0</span>
+                    </div>
+                    <a href="#" id="btn-buy-now" class="btn-buy-now" style="pointer-events: none; opacity: 0.5;">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="images/logo2.png" alt="Nekoblox Logo" class="footer-logo">
+                    <p>Platform terpercaya untuk beli item Roblox dengan cara yang aman, praktis, dan nyaman.</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Hubungi Kami</h4>
+                    <div class="social-item">
+                        <a href="https://www.instagram.com/filkom_24?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link">
+                            <i class="bx bxl-instagram"></i>
+                            <span>@nekoblox</span>
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://t.me/nekoblox" class="social-link">
+                            <i class="bx bxl-telegram"></i>
+                            <span>@Nekoblox</span>
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="mailto:hello@nekoblox.com" class="social-link">
+                            <i class="bx bx-envelope"></i>
+                            <span>hello@nekoblox.com</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-about">
+                    <h4>ANGGOTA KELOMPOK</h4>
+                    <ul class="group-members">
+                        <li>Ali Imannudin - I.2410036</li>
+                        <li>Arinda Setyo Rini - I.2410187</li>
+                        <li>Dimas Rizky Aliandy - I.2310326</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://t.me/nekoblox" class="floating-cs-button" target="_blank">
+        <i class="bx bxl-telegram"></i>
+        <span>Chat CS</span>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
